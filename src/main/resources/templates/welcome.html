@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/resources/images/favicon.png}">
+
+    <title>PetClinic :: a Spring Framework demonstration</title>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<!--     <link rel="stylesheet" th:href="@{/resources/css/petclinic.css}"/>
+ -->
+ <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" th:href="@{/resources/css/bootstrap.min.css}">
+
+    <link rel="stylesheet" type="text/css" th:href="@{/resources/css/font-awesome.css}">
+
+    <link rel="stylesheet" th:href="@{/resources/css/templatemo-training-studio.css}">
+
+	<!-- Google Font -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:700italic' rel='stylesheet' type='text/css'>
+
+
+  </head>
+	<body>
+		 <!-- ***** Features Item Start ***** -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Nuestros <em>Servicios</em></h2>
+                        <img th:src="@{/resources/images/pet1.jpg}" alt="waves" style="width:30em;">
+                        <p>En FurryClinic contamos con muchos servicios para tus mascotas, da un vistazo y descubre nuestros servicios de la mas alta calidad.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="features-items">
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img th:src="@{/resources/images/cirugia.png}" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>Cirugía</h4>
+                                <p>Quirófano equipado con anestesia inhalada y monitores trans-quirúrgicos en donde se visualiza permanentemente las constantes de las mascotas como son el electrocardiograma</p>
+                                <a href="#" class="text-button">Descubre Más</a>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img th:src="@{/resources/images/consulta.png}" alt="second one">
+                            </div>
+                            <div class="right-content">
+                                <h4>Consulta</h4>
+                                <p>Médicos veterinarios expertos en diferentes disciplinas y con la metodología necesaria para llegar a los diagnósticos que permitirán enfocar los tratamientos de manera eficiente y oportuna.</p>
+                                <a href="#" class="text-button">Descubre Más</a>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img th:src="@{/resources/images/estetica.png}" alt="third gym training">
+                            </div>
+                            <div class="right-content">
+                                <h4>Estética</h4>
+                                <p>Expertos estilistas en el arreglo de todas las razas de perros y gatos, las mascotas son bañadas con agua caliente y los shampoo y jabones de la más alta calidad.</p>
+                                <a href="#" class="text-button">Descubre Más</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="features-items">
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img th:src="@{/resources/images/domicilio.png}" alt="fourth muscle">
+                            </div>
+                            <div class="right-content">
+                                <h4>Servicio a Domicilio</h4>
+                                <p>Previa cita contamos con transporte para su mascota para el servicio de estética.</p>
+                                <a href="#" class="text-button">Descubre Más</a>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img th:src="@{/resources/images/medicina-preventiva.png}" alt="training fifth">
+                            </div>
+                            <div class="right-content">
+                                <h4>Medicina preventiva</h4>
+                                <p>Contamos excelentes programas de medicina preventiva como es la aplicación de vacunas para perros, gatos.</p>
+                                <a href="#" class="text-button">Descubre Más</a>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img th:src="@{/resources/images/etiologia.png}" alt="gym training">
+                            </div>
+                            <div class="right-content">
+                                <h4>Entrenamiento</h4>
+                                <p>Ayudamos a mejorar la conducta de tu mascota o entrenarla para eventos.</p>
+                                <a href="#" class="text-button">Descubre Más</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Item End ***** -->
+	
+	<!-- jQuery -->
+    <script th:src="@{/resources/js/jquery-2.1.0.min.js}"></script>
+
+    <!-- Bootstrap -->
+    <script th:src="@{/resources/js/popper.js}"></script>
+    <script th:src="@{/resources/js/bootstrap.min.js}"></script>
+
+    <!-- Plugins -->
+    <script th:src="@{/resources/js/scrollreveal.min.js}"></script>
+    <script th:src="@{/resources/js/waypoints.min.js}"></script>
+    <script th:src="@{/resources/js/jquery.counterup.min.js}"></script>
+    <script th:src="@{/resources/js/imgfix.min.js}"></script> 
+    <script th:src="@{/resources/js/mixitup.js}"></script> 
+    <script th:src="@{/resources/js/accordions.js}"></script>
+    
+    <!-- Global Init -->
+    <script th:src="@{/resources/js/custom.js}"></script>
+	</body>
+</html>
